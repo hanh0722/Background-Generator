@@ -1,0 +1,71 @@
+*{
+    box-sizing: border-box;
+    margin: auto 0;
+}
+body{
+    background: linear-gradient(to right, rgb(216, 176, 194), rgb(237, 232, 232));
+}
+.container{
+    display: block;
+    margin: 5% 25% 0% 25%;
+}
+h1{
+    display: flex;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-bottom: 5%;
+}
+#input-user{
+    padding: 0.5%;
+    margin-right: 2%;
+}
+#add-button{
+    padding: 0.5% 2%;
+    text-transform: uppercase;
+    background-color: black;
+    color: white;
+    border-radius: 2rem;
+    border: none;
+}
+#add-button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
+.input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* justify-content: space-evenly; */
+}
+.card{
+    padding: 2% 2%;
+    margin-bottom: 2%;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 3px 3px 3px 3px #888888;
+}
+.toggle{
+    text-decoration: line-through;
+}
+.button-delete{
+    background-color: black;
+    color: white;  
+}
+.button-delete:hover{
+    background-color: white;
+    color: black;
+}
+@media screen and (max-width: 500px){
+    h1{
+        font-size: 2rem;
+    }
+    .container{
+        margin: 5% 20% 0% 20%;
+    }
+}
